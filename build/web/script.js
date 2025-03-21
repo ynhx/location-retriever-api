@@ -30,7 +30,7 @@ function validate(event) {
          * send the user information from the array to the servlet
          * it sends the data in JSON format
          */
-        fetch('RegisterServlet.do', {
+        fetch('LocationHandlerServlet.do', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(userInfo)
