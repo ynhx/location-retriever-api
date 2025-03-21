@@ -65,7 +65,7 @@ public class LocationHandler {
     /*
     this method calculates if the user attempting to log in is within the required radius
      */
-    public boolean isWithinRadius() {
+    public boolean checkLocation() {
         final int EARTH_RADIUS = 6371; // KM unit
 
         double latDistance = Math.toRadians(allowedLat - userLat);

@@ -54,7 +54,7 @@ public class LocationHandlerServlet extends HttpServlet {
                     userLatitude, userLongitude, allowedLatitude, allowedLongitude, allowedRadius
             );
 
-            boolean allowed = locationHandler.isWithinRadius();
+            boolean allowed = locationHandler.checkLocation();
 
             response.setContentType("application/json");
             response.setCharacterEncoding("UTF-8");
